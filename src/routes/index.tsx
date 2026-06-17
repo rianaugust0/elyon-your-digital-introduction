@@ -5,7 +5,6 @@ import {
   Code2,
   Zap,
   Sparkles,
-  ArrowLeft,
   Instagram,
   MessageCircle,
   Gift,
