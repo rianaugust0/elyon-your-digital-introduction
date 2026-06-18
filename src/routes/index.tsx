@@ -94,7 +94,7 @@ function ElyonPage() {
           transition={{ duration: 1, delay: 0.5 }}
           className="mx-auto mt-6 max-w-md text-[15px] leading-relaxed text-muted-foreground sm:mt-8 sm:max-w-xl sm:text-lg"
         >
-          Ajudamos empresários a crescer com tecnologia, design e automação —
+          Ajudamos visionários, negócios e ideias a ganharem vida e crescerem com tecnologia, design, tráfego e automação —
           unindo excelência técnica e propósito em cada detalhe.
         </motion.p>
 
@@ -147,11 +147,23 @@ function ElyonPage() {
           custom={2}
           className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:mt-8 sm:text-lg"
         >
-          A Elyon nasceu da convicção de que cada empresa carrega um potencial
-          extraordinário. Nosso trabalho é traduzir esse potencial em
-          tecnologia: soluções sob medida que tornam empresários mais
-          profissionais, organizados e prontos para a próxima fase.
+          A Elyon nasceu da convicção de que toda pessoa e toda empresa carrega um potencial
+          extraordinário. Nosso trabalho é traduzir esse potencial em realidade: 
+          seja tirando o seu primeiro sonho do papel de forma didática, ou criando soluções 
+          sob medida que tornam negócios mais profissionais e lucrativos.
         </motion.p>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          variants={fadeUp}
+          custom={3}
+          className="mt-6 border-l-2 border-gold/40 pl-4 sm:mt-8"
+        >
+          <p className="text-[15px] italic leading-relaxed text-muted-foreground/90">
+            *Elyon é uma palavra de origem hebraica que significa <strong className="font-medium text-foreground">"Deus Altíssimo"</strong>. É sob essa inspiração que buscamos entregar o nível mais alto de excelência, propósito e cuidado em tudo o que fazemos.
+          </p>
+        </motion.div>
       </section>
 
       {/* COMO SERVIMOS */}
@@ -175,24 +187,24 @@ function ElyonPage() {
         <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:mt-16 sm:grid-cols-2">
           {[
             {
+              icon: Sparkles,
+              title: "Tráfego Pago & Posicionamento",
+              desc: "Sua empresa não é vista? Fazemos gestão estratégica de anúncios para colocar o seu negócio na frente de quem já quer comprar de você.",
+            },
+            {
               icon: Globe2,
-              title: "Sites Profissionais",
-              desc: "Landing pages e institucionais modernos, de alta conversão, construídos com cuidado em cada detalhe.",
+              title: "Criação de Sites",
+              desc: "Landing pages e institucionais premium, focados em conversão, construídos com extrema excelência em cada detalhe.",
             },
             {
               icon: Code2,
-              title: "Sistemas Sob Medida",
-              desc: "Softwares desenhados para resolver problemas reais do seu dia a dia — sem genéricos, sem ruído.",
+              title: "Sistemas & Softwares",
+              desc: "Ferramentas desenhadas para resolver os problemas reais da sua operação — personalizadas, sem soluções genéricas.",
             },
             {
               icon: Zap,
               title: "Automações Inteligentes",
-              desc: "Menos trabalho manual, mais eficiência. Liberamos seu tempo para o que realmente importa.",
-            },
-            {
-              icon: Sparkles,
-              title: "Presença Digital",
-              desc: "Estratégias claras para fortalecer sua marca, gerar autoridade e atrair os clientes certos.",
+              desc: "Elimine o trabalho braçal e repetitivo. Conectamos suas ferramentas para liberar o seu tempo para o que realmente importa.",
             },
           ].map((s, i) => (
             <motion.div
@@ -216,6 +228,23 @@ function ElyonPage() {
             </motion.div>
           ))}
         </div>
+
+        {/* MENSAGEM COMUNIDADE / INICIANTES / INDICAÇÕES */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          variants={fadeUp}
+          className="mt-16 rounded-2xl border border-gold/20 bg-card/30 p-8 sm:p-12 text-center relative overflow-hidden backdrop-blur-sm"
+        >
+          <div className="absolute inset-0 bg-gold-gradient opacity-[0.03]" />
+          <h3 className="font-display text-2xl font-medium tracking-tight sm:text-3xl relative z-10">
+            Ainda não é empresário? <span className="text-gold-gradient italic">Tudo bem.</span>
+          </h3>
+          <p className="mt-4 max-w-2xl mx-auto text-[15px] leading-relaxed text-muted-foreground relative z-10">
+            Nós acreditamos no seu potencial. Se você tem uma ideia e quer tirá-la do papel de forma profissional, nós te ajudamos a estruturar tudo. E se você conhece alguém — um amigo ou familiar — que tem um negócio e precisa de divulgação, tráfego ou organização, <strong>indicar a Elyon também é uma forma de servir e abençoar a vida deles.</strong>
+          </p>
+        </motion.div>
       </section>
 
       {/* COMPROMISSO */}
@@ -276,7 +305,7 @@ function ElyonPage() {
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
               Como agradecimento por fazer parte desta história, queremos
-              oferecer um café virtual com você — para entender seu negócio e
+              oferecer um café virtual com você — para entender o seu momento, sua ideia ou o seu negócio, e
               descobrir como podemos servir.
             </p>
 
@@ -284,7 +313,7 @@ function ElyonPage() {
               {[
                 "Sem compromisso",
                 "Sem venda forçada",
-                "Apenas para entender seu momento e como podemos ajudar",
+                "Para empreendedores, iniciantes ou quem quer indicar alguém",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold" />
@@ -329,7 +358,7 @@ function ElyonPage() {
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="https://instagram.com/"
+            href="https://www.instagram.com/elyon.corporate/?hl=en"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-5 py-2.5 text-sm text-foreground/90 transition-colors hover:border-gold/40 hover:text-foreground"
@@ -338,7 +367,7 @@ function ElyonPage() {
             Instagram
           </a>
           <a
-            href="https://wa.me/"
+            href="https://wa.me/5562982224691"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-5 py-2.5 text-sm text-foreground/90 transition-colors hover:border-gold/40 hover:text-foreground"
@@ -370,6 +399,17 @@ function ElyonPage() {
           </p>
         </div>
       </footer>
+
+      {/* Botão Flutuante WhatsApp */}
+      <a
+        href="https://wa.me/5562982224691"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gold-gradient text-background shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all hover:scale-110 hover:shadow-[0_0_30px_rgba(212,175,55,0.6)]"
+        aria-label="Falar pelo WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6" strokeWidth={1.5} />
+      </a>
     </main>
   );
 }

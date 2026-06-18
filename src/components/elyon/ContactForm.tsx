@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Loader2, Instagram, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
-const WHATSAPP_NUMBER = "5500000000000"; // placeholder — substitua pelo número real
+const WHATSAPP_NUMBER = "5562982224691";
 const INSTAGRAM_HANDLE = "elyon.corporate";
 
 const schema = z.object({

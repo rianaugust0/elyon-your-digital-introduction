@@ -11,13 +11,13 @@ export const Route = createFileRoute("/historia")({
       {
         name: "description",
         content:
-          "A jornada da Elyon Corporate: como dois jovens transformaram fé, tecnologia e propósito em soluções que servem empresários.",
+          "A jornada da Elyon Corporate: como dois jovens transformaram fé, tecnologia e propósito em soluções que servem pessoas e negócios.",
       },
       { property: "og:title", content: "Nossa história — Elyon" },
       {
         property: "og:description",
         content:
-          "A jornada da Elyon: fé, tecnologia e propósito a serviço de empresários.",
+          "A jornada da Elyon: fé, tecnologia e propósito a serviço de pessoas e negócios.",
       },
     ],
   }),
@@ -29,7 +29,7 @@ const timeline = [
     year: "O início",
     icon: Compass,
     title: "Uma convicção",
-    desc: "Tudo começou com uma certeza simples: tecnologia bem feita pode mudar a vida de empresários. Unimos fé, talento técnico e disciplina para servir.",
+    desc: "Tudo começou com uma certeza simples: tecnologia bem feita pode transformar realidades. Escolhemos o nome Elyon (o Deus Altíssimo) para nos lembrar de onde vem a nossa inspiração. Unimos fé, talento técnico e disciplina para servir e tirar sonhos do papel.",
   },
   {
     year: "Primeiros passos",
@@ -41,7 +41,7 @@ const timeline = [
     year: "Hoje",
     icon: Rocket,
     title: "Elyon Corporate",
-    desc: "Atendemos empresários que buscam crescer com profissionalismo. Sites, sistemas, automações e presença digital — sob medida, sem ruído.",
+    desc: "Atendemos desde empresas que buscam escalar até visionários dando os primeiros passos. Tráfego, sites, sistemas e automações — sob medida, sem ruído.",
   },
   {
     year: "Sempre",
@@ -53,6 +53,10 @@ const timeline = [
 
 const highlights = [
   {
+    title: "Tráfego & Posicionamento",
+    desc: "Gestão de anúncios, estratégia e autoridade para atrair clientes.",
+  },
+  {
     title: "Sites Profissionais",
     desc: "Identidade visual coesa, performance e copy que converte.",
   },
@@ -62,11 +66,7 @@ const highlights = [
   },
   {
     title: "Automações",
-    desc: "Integrações que eliminam tarefas repetitivas do seu time.",
-  },
-  {
-    title: "Presença Digital",
-    desc: "Estratégia, conteúdo e autoridade para o longo prazo.",
+    desc: "Integrações que eliminam tarefas repetitivas do seu dia a dia.",
   },
 ];
 
@@ -128,7 +128,7 @@ function HistoriaPage() {
           className="mx-auto mt-6 max-w-xl text-[15px] leading-relaxed text-muted-foreground sm:text-lg"
         >
           A Elyon não é apenas uma empresa de tecnologia. É um chamado para
-          servir empresários através daquilo que fazemos com excelência.
+          servir pessoas, impulsionar negócios e dar vida a ideias através daquilo que fazemos com excelência.
         </motion.p>
       </section>
 
